@@ -37,7 +37,7 @@
           v-bind:valid="address.valid"
           v-bind:validated="address.validated"
           @input="onAddressInput"
-          question="What's your rental pro perty's address (Street Address, City, State & Zip) ? *"
+          question="What's your rental property's address (Street Address, City, State & Zip) ? *"
           />
       </tab-content>
       <tab-content class="wizard-tab-content" title="Phone number info" :before-change="validatePhone">
@@ -46,7 +46,7 @@
           v-bind:valid="phone.valid"
           v-bind:validated="phone.validated"
           @input="onPhoneInput"
-          question="What is the best Phone Number to reach you? *"
+          question="What is your phone number? *"
           />
       </tab-content>
       <tab-content class="wizard-tab-content" title="Full Name Info" :before-change="validateFullname">
@@ -64,7 +64,7 @@
           v-bind:valid="email.valid"
           v-bind:validated="email.validated"
           @input="onEmailInput"
-          question="What is the best email address to reach you? *" 
+          question="What your email address? *" 
           />
       </tab-content>
       <template slot="next" slot-scope="props">
